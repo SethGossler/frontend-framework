@@ -18,6 +18,6 @@ Instructions to do in the command line to get things started:
 To add external libs (like stuff installed from bower or npm), add them to the scripts.json file!
 This is found at src/libs/scripts.json
 
-I've already included jquery, and require.js. These are required by the framework, so please don't remove thm accidentally when adding new external scripts.
+I've already included jquery, and require.js. These are required by the framework, so please don't remove them accidentally when adding new external scripts.
 
 Everything else should be taken care of. Let me know if we should clarify anything for future projects!
