@@ -55,7 +55,7 @@ function onError(err) {
 }
 
 function mvFiles(src, dest) {
-    console.log( "Move Files" );
+    // console.log( "Move Files" );
     return gulp.src( src )
         .pipe(gulp.dest( dest ))
         .pipe(ifElse( !_building, liveReload ));
@@ -69,7 +69,7 @@ function mvFilesConcat(src, dest, concatName) {
 }
 
 function sassCompile(src, name, dest) {
-    console.log( "Sass compile" );
+    // console.log( "Sass compile" );
     return gulp.src( src )
         .pipe(plumber({errorHandler: onError}))
         .pipe(sass( { includePaths: [ libs+'/sass/'] } ))
@@ -80,7 +80,7 @@ function sassCompile(src, name, dest) {
 }
 
 function jsCompile(src, name, dest) {
-    console.log( "js compile" );
+    // console.log( "js compile" );
     return gulp.src( src )
         .pipe(plumber({errorHandler: onError}))
         .pipe(concat( name ))
@@ -100,7 +100,7 @@ gulp.task('lint', function() {
 // #Layout related tasks
 // Build out the layout jade
 gulp.task('layout-jade', function() {
-    console.log( "Jade Tasks" );
+    // console.log( "Jade Tasks" );
     return gulp.src( layoutsJade )
         .pipe(plumber({errorHandler: onError}))
         .pipe(gulpJade({
@@ -183,7 +183,7 @@ gulp.task('remove-it-all', function(){
 
 gulp.task('server', function() {
     var dir = __dirname + '\\build\\public';
-    console.log(" Server On Port 3001 ");
+    console.log("------>>> Server On Port 3001 <<<---------");
     app.use(require('connect-livereload')());
     app.use(express.static( dir ));
     app.listen(3001);
