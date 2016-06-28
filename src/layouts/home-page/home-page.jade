@@ -1,0 +1,33 @@
+extends ../../libs/jade/index.jade
+
+block title
+  title home-page
+
+block content
+  h1 Layout - home-page
+  h3 Add Content to this Page.
+  h5 Do this by adding views, or page related content.
+  br
+  .explanation
+    h1 Hey Guys! The above stuff is part of the 'yo frontend' output of a 'layout' page.
+    br
+    h3 <i>This isn't! This is something I added to explain somethings</i>
+    br
+    h3 This is an exampe of a layout page - my hand crafted 'home-page'. 
+    br
+    h3 You can think of these "layout pages" as 'index" pages, but but when they build out, you access them at<br><br><i>http://(site domain)/layout-name/layout-name.html</i>
+    br
+    h3 This naming convention is setup for easier backend integration. Apologizes if its confusing at first. But it shouldn't hold you back from whatever you're doing : )
+    br
+    h3 I'm going to add a 'view' now, which is a big part of the build seutp here. These are components, and they are added to layout pages. For ex:
+    br
+    h3 if I type in the home-page.jade file:
+    br
+    h3 <i>+getView('hero-image', {'src': 'cnk-logo.png'})</i>
+    br
+    +getView('hero-image', {'src': '/assets/img/cnk-logo.png'})
+    br
+    h3 View's are like components, or modules. They have their own SCSS, Jade, and JS binded to them.
+    h3 If you opened your browsers tools inspector, you'll see a click event is binded to the hero-image view. PRETTY COOL HUH!?
+    br
+    h3 Alright! That's it for now! Go make some of your own views and layouts with 'yo frontend' on the command line! OH, AND Delete this layout (aka. the home-page), and the hero-image view when you're done with them!

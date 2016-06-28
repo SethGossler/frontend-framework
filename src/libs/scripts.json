@@ -1,0 +1,4 @@
+{
+	"requirejs":"./node_modules/requirejs/require.js",
+	"jquery": "./bower_components/jquery/dist/jquery.min.js"
+}

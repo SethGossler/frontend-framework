@@ -1,0 +1,9 @@
+bower_components
+node_modules
+src/core/assets/js/jquery
+src/core/assets/js/phaser
+build
+buid/assets/js/git brjquery
+build/assets/js/phaser
+start.cmd
+*.tmp
